@@ -53,4 +53,23 @@
             "url": "heroku/python"
         }
     ]
+},
+    POST https://v2.convertapi.com/convert/epub/to/pdf?Secret=your-api-secret
+Content-Type: application/json
+ 
+{
+    "Parameters": [
+        {
+            "Name": "File",
+            "FileValue": {
+                "Name": "my_file.epub",
+                "Data": "<Base64 encoded file content>"
+            }
+        },
+        {
+            "Name": "StoreFile",
+            "Value": true
+        }
+    ]
+}
 }
